@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base style */
+
+*{
+  margin:0;
+  font-family: "Quicksand";
+  color:#333;
+}
+
+/* utilities */
+
+.container{
+  max-width:500px;
+  margin: 20px auto;
+  padding:10px 20px 20px 25px;
+  border:15px solid #E5E5E5;
+  background-color:#fff;
+}
+
+
+.btn{
+  color:#757784;
+  font-weight:bold;
+  font-size:14px;
+  border:1px solid #ECECEC;
+  padding:6px 8px 6px 8px;
+  border-radius:10px;
+}
+.btn-active{
+  color:#1A8FE6;
+  border:1px solid #1A8FE6;
+  background-color: #fff;
+
+}
+
+input.check-size{
+  width:20px;
+  height:20px;
+  border:5px solid #757784;
+}
+
+/* component */
+
+.main-card{
+  display:flex;
+  gap:50px;
+}
+
+.user-info{
+  flex-grow:2;
+}
+.user-header{
+  display:flex;
+  gap:30px;
+  padding:5px 0 10px 0;
+  align-items:center;
+}
+
+#user-role{
+  color:#1A8FE6;
+  font-weight:bold;
+}
+
+.user-midsection{
+  padding:10px 0 10px 0;
+}
+
+.user-score{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center; 
+  padding:10px 0 15px 0;
+}
+
+
+.user-scorebar{
+  display:flex;
+  gap:10px;
+  margin:5px 0 0 0;
+}
+
+.user-tags{
+  display:flex;
+  gap:10px;
+}
+
+.user-footer{
+  display:flex;
+  justify-content:space-between;
+  margin:8px -15px 0 -15px;
+}
+
+#uploaded{
+  color:#1A8FE6;
+  font-weight: bold;
+}
+
+.user-icons{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  font-size:24px;
+}
+
+/* progress-bar */
+
+#user-percent{
+  color:#757784;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.progress {
+  width: 80px;
+  height: 20px;
+  background: repeating-linear-gradient(
+      to right,
+      #ddd,
+      #ddd 4%,
+      transparent 4%,
+      transparent 5%
+    ),
+    repeating-linear-gradient(
+      to right,
+      #1A8FE6,
+      #1A8FE6 20%,
+      transparent 10%,
+      transparent 25%
+    );
+
+  background-size: 200%, 100%;
+  background-position: -100%;
+  background-repeat: repeat-y;
+}

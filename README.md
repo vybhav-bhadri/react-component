@@ -1,6 +1,6 @@
 # React Component
 
-you can run:
+To check component demo run:
 
 ### `npm start`
 
